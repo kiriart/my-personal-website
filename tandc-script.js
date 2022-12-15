@@ -23,12 +23,17 @@ let trainingArray = [
   { training: "Internet Technology", date: "Jan / 1990" },
   { training: "Routing and Switching", date: "Jan / 2003" },
   { training: "Programming in Python", date: "Aug / 2009" },
+  { training: "Web Development", date: "" },
 ];
 
 ul = document.querySelector("#training");
 
 for (i = 0; i < trainingArray.length; i++) {
   let li = document.createElement("li");
+
+  if (trainingArray[i].date === "") {
+    trainingArray[i].date = "Ongoing";
+  }
   string = `${trainingArray[i].training} - ${trainingArray[i].date} `;
 
   let html = `
