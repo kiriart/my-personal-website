@@ -32,7 +32,7 @@ h2 {
   padding-bottom: 10px;
 }
 
-.hrefgithub {
+.hrefgithub, .hrefindex {
   color: var(--link);
   text-decoration: underline;
   font-family: sans-serif;
@@ -151,21 +151,21 @@ header {
 }
 
 /*  */
-/* ----------- Projects ----------*/
+/* ----------- Projects or Certificates ----------*/
 /*  */
 
-#projects {
+#projects, #certificates {
   padding-bottom: 20px;
   background-color: var(--background-proj);
 }
 
-/* Project header */
-#projects h2 {
+/* Project or Certificates header */
+#projects, #certificates h2 {
   text-align: center;
 }
 
-/* Project Flex */
-.projflex {
+/* Project or Certificates Flex */
+.projflex, .certflex {
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -173,8 +173,8 @@ header {
   border-block-start: 1px solid var(--font-color);
 }
 
-/* Project text */
-.projtext {
+/* Project or Certificates text */
+.projtext, .certtext {
   width: 50%;
   text-align: justify;
 }

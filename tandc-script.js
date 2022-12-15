@@ -1,18 +1,18 @@
 let certifications = [
-  { certificate: "CCIE-1", Year: 2000 },
-  { certificate: "CCIE-2", Year: 2003 },
-  { certificate: "CCIE-3", Year: 2009 },
-  { certificate: "CCIE-3", Year: 2020 },
+  { certificate: "Routing and Switching", date: "Jun / 2000" },
+  { certificate: "Web Development", date: "Jan / 2003" },
+  { certificate: "Python Coding", date: "Aug / 2009" },
+  { certificate: "JavaScript", date: "Nov / 2020" },
 ];
 
 let ul = document.querySelector("#certifications");
 
 for (i = 0; i < certifications.length; i++) {
   let li = document.createElement("li");
-  string = `${certifications[i].certificate} - ${certifications[i].Year} `;
+  string = `${certifications[i].certificate} - ${certifications[i].date} `;
 
   let html = `
-  <p class="card-text">${string}</p>`;
+  <p class="li-cert">${string}</p>`;
 
   li.innerHTML = html;
 
