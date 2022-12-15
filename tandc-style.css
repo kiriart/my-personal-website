@@ -1,0 +1,320 @@
+body {
+  box-sizing: border-box;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+
+  --font-color: #253a52;
+  --background-bio: #c4e1ee;
+  --background-hdr: #80abc0;
+  --font-hover: #4e7aad;
+  --background-btn: #1348da;
+  --background-proj: #0ed1ef;
+  --whitefont: #fff;
+  --background-python: #b8ed9b;
+  --background-contact: #e9ecbf;
+  --link: #1348da;
+  --asideborder: #f60404;
+  --asidebackground: #f2a72e;
+}
+
+.width910 {
+  width: 910px;
+  margin: 0px auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0%;
+  margin-top: 0;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.hrefgithub {
+  color: var(--link);
+  text-decoration: underline;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a.btn1 {
+  text-decoration: none;
+  color: var(--whitefont);
+  background: var(--background-btn);
+  padding: 0 1rem;
+  display: inline-flex;
+  height: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+
+aside {
+  border: solid 4px var(--asideborder);
+  background-color: var(--asidebackground);
+  color: var(--font-color);
+  text-align: center;
+  padding: 0px 4px 3px 4px;
+}
+
+/*  */
+/* ----------- Header ----------*/
+/*  */
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: var(--background-hdr);
+}
+
+/* title */
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 910px;
+  margin: 0px auto;
+}
+
+#title a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* My name */
+#myname {
+  padding-left: 40px;
+}
+
+/* My name anchor */
+#myname a {
+  color: var(--font-color);
+}
+
+/* navbar */
+#navbar a {
+  padding: 30px 40px 30px;
+  /* padding-right: 40px; */
+  /* padding-left: 40px; */
+  color: var(--font-color);
+  font-size: 1.2rem;
+}
+
+/* navbar hover */
+#navbar a:hover {
+  background: var(--font-hover);
+}
+
+/* menu-icon */
+#menu-icon {
+  display: none;
+}
+
+/*  */
+/* ----------- Bio ----------*/
+/*  */
+
+#bio {
+  background: var(--background-bio);
+}
+
+/* Bio container */
+#bioflex {
+  padding-top: 110px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Bio figure */
+#biofigure {
+  width: 20%;
+}
+
+/* Bio image */
+#bioimage {
+  max-width: 180px;
+  border-radius: 50%;
+  border: var(--font-color) 2px solid;
+}
+
+/* Bio text */
+#biotext {
+  width: 500px;
+  text-align: justify;
+}
+
+/*  */
+/* ----------- Projects ----------*/
+/*  */
+
+#projects {
+  padding-bottom: 20px;
+  background-color: var(--background-proj);
+}
+
+/* Project header */
+#projects h2 {
+  text-align: center;
+}
+
+/* Project Flex */
+.projflex {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-block-start: 1px solid var(--font-color);
+}
+
+/* Project text */
+.projtext {
+  width: 50%;
+  text-align: justify;
+}
+
+/* Project figure */
+.projfigure {
+  width: 30%;
+}
+
+/* Project image */
+.projimage {
+  width: 100%;
+  border: var(--font-color) 2px solid;
+}
+
+/*  */
+/* ----------- Python ----------*/
+/*  */
+
+/* Python header */
+#python h2 {
+  text-align: center;
+  border-block-end: 1px solid var(--font-color);
+}
+
+/* Python background */
+#python {
+  background-color: var(--background-python);
+}
+
+/* Python grid */
+#pythongrid {
+  display: grid;
+  grid-template: 1fr 1fr / 25% 25% 25%;
+  gap: 5%;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+
+/* Python image */
+#pythongrid img {
+  width: 100%;
+}
+
+/* Python text */
+#pythongrid h4 {
+  text-align: justify;
+}
+
+/* Python grid vertical gap */
+#pythongrid > div {
+  padding-bottom: 20px;
+}
+
+/*  */
+/* ----------- Contact ----------*/
+/*  */
+
+#contact {
+  background-color: var(--background-contact);
+}
+
+/* Contact header */
+#contact h2 {
+  text-align: center;
+  border-block-start: 1px solid var(--font-color);
+}
+
+/* Contact flex */
+#contactflex {
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact icons */
+#contactflex img {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+/*  */
+/* ----------- Footer ----------*/
+/*  */
+
+footer {
+  background-color: var(--background-contact);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/*  */
+/* ----------- Responsive Features ----------*/
+/*  */
+
+@media only screen and (max-width: 910px) {
+  #wrapper nav a {
+    display: none;
+  }
+
+  #navbar #menu-icon {
+    display: block;
+    float: right;
+    font-size: 3em;
+    padding: 20px;
+    width: auto;
+  }
+
+  .width910 {
+    width: auto;
+  }
+
+  #bioflex {
+    flex-wrap: wrap;
+  }
+
+  #bioimage {
+    width: 100%;
+  }
+
+  #biotext {
+    width: 90%;
+  }
+
+  .projflex {
+    flex-wrap: wrap;
+  }
+
+  .projfigure {
+    width: 60%;
+  }
+
+  .projtext {
+    width: 90%;
+  }
+
+  #pythongrid {
+    grid-template: 1fr 1fr / 30% 30%;
+  }
+}
